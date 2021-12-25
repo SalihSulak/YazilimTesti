@@ -33,4 +33,26 @@ public class CalculatorController {
 	public double multiplication(@RequestParam("number1") double number1, @RequestParam("number2") double number2) {
 		return calculatorService.multiplication(number1, number2);
 	}
+	@GetMapping("/division")
+	public double division(@RequestParam("number1") double number1, @RequestParam("number2") double number2) {
+		return calculatorService.division(number1,number2);
+	}
+	@GetMapping("/log")
+	public double log(@RequestParam("number1") double number1) {
+		return calculatorService.log(number1);
+	}
+	
+	@GetMapping("/square")
+	public double square(@RequestParam("number1") double number1) {
+		return calculatorService.square(number1);
+	}
+	@GetMapping("/cub")
+	public double cub(@RequestParam("number1") double number1) {
+		return calculatorService.cub(number1);
+	}
+	
+	@GetMapping("/squareRoot")
+	public double squareRoot(@RequestParam("number1") double number1) {
+		return calculatorService.squareRoot(number1);
+	}
 }
