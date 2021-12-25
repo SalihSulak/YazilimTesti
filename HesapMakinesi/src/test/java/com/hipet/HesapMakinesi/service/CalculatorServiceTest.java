@@ -3,10 +3,8 @@ package com.hipet.HesapMakinesi.service;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
 
 class CalculatorServiceTest {
 
@@ -49,6 +47,35 @@ class CalculatorServiceTest {
         double number2=2;
         double result=calculatorService.division(number1,number2);
         assertEquals(5,result);
-
     }
+
+    @Test
+    void log(){
+        double number1 = 100;
+        double result = calculatorService.log((number1));
+        assertEquals(2,result);
+    }
+
+    @Test
+    void square() {
+        double number1=3;
+        double result=calculatorService.square((number1));
+        assertEquals(9,result);
+    }
+
+    @Test
+    void cub() {
+        double number1=2;
+        double result=calculatorService.cub((number1));
+        assertEquals(8,result);
+    }
+
+    @Test
+    void squareRoot() {
+        double number1=9;
+        double result=calculatorService.squareRoot((number1));
+        assertEquals(3,result);
+    }
+
+
 }

@@ -1,8 +1,5 @@
 package com.hipet.HesapMakinesi.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CalculatorService {
 	public double sum(double number1, double number2) {
 		
@@ -31,7 +28,7 @@ public class CalculatorService {
 	
 	public double log(double number1) {
 		
-			double result = Math.log(number1);
+			double result = Math.log10(number1);
 		return result;
 	}
 	
