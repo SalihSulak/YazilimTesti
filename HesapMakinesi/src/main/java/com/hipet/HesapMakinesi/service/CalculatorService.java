@@ -33,5 +33,23 @@ public class CalculatorService {
 		
 			double result = Math.log(number1);
 		return result;
+	}
+	
+	public double square(double number1) {
+		
+			double result = number1*number1;
+		return result;
+	}
+	
+	public double cub(double number1) {
+		
+			double result = number1*number1*number1;
+		return result;
+	}
+	
+	public double squareRoot(double number1) {
+		
+		double result = Math.sqrt(number1);
+	return result;
 }
 }
