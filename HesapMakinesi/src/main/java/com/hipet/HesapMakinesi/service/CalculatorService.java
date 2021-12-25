@@ -1,5 +1,8 @@
 package com.hipet.HesapMakinesi.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class CalculatorService {
 	public double sum(double number1, double number2) {
 		
