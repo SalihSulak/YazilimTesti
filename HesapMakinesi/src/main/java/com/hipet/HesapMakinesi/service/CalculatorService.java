@@ -46,7 +46,7 @@ public class CalculatorService {
 	
 	public double squareRoot(double number1) {
 		
-		double result = Math.sqrt(number1);
-	return result;
+			double result = Math.sqrt(number1);
+		return result;
 }
 }
