@@ -26,6 +26,11 @@ public class RegisterTest {
         passwordCheck.sendKeys("HiPetTeam321");
         kayitOlButonu.click();
         
+        WebElement sendCodeInput =  driver.findElement(By.id("cvf-input-code"));
+		if(sendCodeInput.isDisplayed()) 
+			System.out.println("Test Passed");
+		else
+			System.out.println("Test Failed");
 
 	}
 
