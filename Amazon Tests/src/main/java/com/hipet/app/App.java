@@ -29,7 +29,13 @@ public class App
         WebElement girisYapButonu = driver.findElement(By.id("signInSubmit"));
         girisYapButonu.click();
         
+        WebElement username = driver.findElement(By.id("nav-link-accountList-nav-line-1"));
         
+        if(username.getText().equals("HiPet")) 
+        	System.out.println("Test Passed");
+        
+        else
+        	System.out.println("Test Failed");
        
         
     }
